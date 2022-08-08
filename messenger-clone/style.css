@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+html, body {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    height: 100%;
+    width: 100%;
+}
+
+.mes-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.mes-form .mes-left {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.mes-left .mes-left-action{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.mes-left-action .action .icon{
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 100%;    
+    font-size: 18px;
+    color: #000;
+    margin-left: 8px;
+}
+
+.mes-left-action .action .icon:hover{
+    background-color: #ccc;
+}
+
+.mes-form .left-search {
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.left-search .search-icon {
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #999999;
+    min-width: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-right: none;
+}
+
+.left-search .search-input {
+    background-color: #f2f2f2;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-left: none;
+    font-size: 16px;
+}
+
+.list-chat-user {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.left-group-chat {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+}
+
+.left-group-chat:hover {
+    background-color: #e6e6e6;
+    border-radius: 7px;
+}
+
+.left-group-chat:hover .icon-hover{
+    visibility: visible;
+}
+
+.icon-hover:hover{
+    background-color: #a6a6a6;
+}
+
+.left-group-chat .chat-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.left-group-chat .user-content {
+    margin-left: 8px;
+}
+
+.left-group-chat .user-content .chat-user p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+}
+
+.left-group-chat .user-content .chat-content p{
+    font-size: 13px;
+    font-weight: 300;
+    color: #a6a6a6;
+    margin-top: 7px;
+    width: 210px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.icon-hover {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 100%;    
+    font-size: 18px;
+    color: #000;
+    margin-left: 8px;
+    position: absolute;
+    right: 45px;
+    top: 19px;
+    visibility: hidden;
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: rgb(20, 147, 221);
+    border-radius: 50%;
+}
+
+.mes-body {
+    width: 50%;
+}
+
+.mes-right {
+    width: 25%;
+}

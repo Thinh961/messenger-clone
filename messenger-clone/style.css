@@ -7,7 +7,8 @@ li {
     list-style: none;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -24,7 +25,7 @@ html, body {
     border-right: 1px solid#ccc;
 }
 
-.mes-left .mes-left-action{
+.mes-left .mes-left-action {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -32,16 +33,16 @@ html, body {
     padding-right: 20px;
 }
 
-.mes-left-action .action .icon{
+.mes-left-action .action .icon {
     background-color: rgb(236, 236, 236);
     padding: 10px;
-    border-radius: 100%;    
+    border-radius: 100%;
     font-size: 18px;
     color: #000;
     margin-left: 8px;
 }
 
-.mes-left-action .action .icon:hover{
+.mes-left-action .action .icon:hover {
     background-color: #ccc;
 }
 
@@ -99,11 +100,11 @@ html, body {
     border-radius: 7px;
 }
 
-.left-group-chat:hover .icon-hover{
+.left-group-chat:hover .icon-hover {
     visibility: visible;
 }
 
-.icon-hover:hover{
+.icon-hover:hover {
     background-color: #a6a6a6;
 }
 
@@ -118,13 +119,13 @@ html, body {
     margin-left: 8px;
 }
 
-.left-group-chat .user-content .chat-user p{
+.left-group-chat .user-content .chat-user p {
     font-size: 16px;
     font-weight: 300;
     color: #000;
 }
 
-.left-group-chat .user-content .chat-content p{
+.left-group-chat .user-content .chat-content p {
     font-size: 13px;
     font-weight: 300;
     color: #a6a6a6;
@@ -139,7 +140,7 @@ html, body {
 .icon-hover {
     background-color: #fff;
     padding: 10px;
-    border-radius: 100%;    
+    border-radius: 100%;
     font-size: 18px;
     color: #000;
     margin-left: 8px;
@@ -171,7 +172,7 @@ html, body {
     width: 50%;
 }
 
-.mes-body .mes-body-header{
+.mes-body .mes-body-header {
     display: flex;
     border-bottom: 1px solid #ccc;
     box-shadow: #999999;
@@ -180,12 +181,12 @@ html, body {
     align-items: center;
 }
 
-.mes-body-header .user-left{
+.mes-body-header .user-left {
     display: flex;
     padding: 7px;
 }
 
-.mes-body-header .user-left:hover{
+.mes-body-header .user-left:hover {
     background-color: #f1f0f0;
     border-radius: 5px;
 }
@@ -216,7 +217,7 @@ html, body {
     border-radius: 50px;
 }
 
-.mes-body .mes-body-header .user-image{
+.mes-body .mes-body-header .user-image {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -234,47 +235,94 @@ html, body {
     left: 434px;
 }
 
-.mes-body .live-chat {
+.live-chat {
     height: 100%;
-    overflow-y: scroll;
 }
 
-.chat-action {
-    display: flex;
-    margin-top: 5px;
-    align-items: center;
-    max-width: 45%;
-}
-
-.chat-action .img-chat-action {
+.img-message {
     width: 30px;
     height: 30px;
     border-radius: 50px;
 }
 
-.chat-action .show-chat {
-    margin-left: 5px;
-    background-color: #E4E6EB;
-    padding: 10px;
-    border-radius: 50px;
+.conversation {
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
-.chat-me {
-    width: 45%;
+.messages {
+    margin-bottom: 10px;
+}
+
+.messages--received .message {
+    float: left;
+    background-color: #ddd;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.messages--received .message:first-child {
+    border-top-left-radius: 15px;
+}
+
+.messages--received .message:last-child {
+    border-bottom-left-radius: 15px;
+}
+
+.messages--sent .message {
     float: right;
-    margin-right: 5px;
+    background-color: #1998e6;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.time-chat{
+.messages--sent .message:first-child {
+    border-top-right-radius: 15px;
+}
+
+.messages--sent .message:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+.message {
+    display: inline-block;
+    margin-bottom: 2px;
+    clear: both;
+    padding: 7px 13px;
+    font-size: 14px;
+    border-radius: 15px;
+    line-height: 1.4;
+}
+
+.time-chat {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.chat-me .show-chat {
-    background-color: rgb(20, 147, 221);
-    padding: 10px;
+.text-bar {
+    display: flex;
+}
+
+.icon-bar {
+    color: #1998e6;
+    font-size: 18px;
+    justify-content: center;
+    padding: 10px 3px;
+}
+
+.text-bar__field input {
     border-radius: 50px;
+    padding: 5px;
+    background-color: #ccc;
+    border: none;
+}
+
+.text-bar__field input:focus-visible {
+    border: none;
 }
 
 .mes-right {

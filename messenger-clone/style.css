@@ -96,14 +96,15 @@ body {
 .left-group-chat {
     display: flex;
     align-items: center;
-    padding: 8px 20px;
+    padding: 8px 8px;
     position: relative;
     justify-content: space-between;
+    margin: 0 10px;
 }
 
 .left-group-chat:hover {
     background-color: #e6e6e6;
-    border-radius: 7px;
+    border-radius: 9px;
 }
 
 .left-group-chat:hover .icon-hover {
@@ -123,15 +124,17 @@ body {
 
 .left-group-chat .user-content {
     margin-left: 8px;
+    display: flex;
+    align-items: center;
 }
 
-.left-group-chat .user-content .chat-user p {
+.user-content .chat-user {
     font-size: 16px;
     font-weight: 300;
     color: #000;
 }
 
-.left-group-chat .user-content .chat-content p {
+.user-content .chat-content {
     font-size: 13px;
     font-weight: 300;
     color: #a6a6a6;
@@ -143,17 +146,22 @@ body {
     text-overflow: ellipsis;
 }
 
+.user-content .group-name {
+    margin-left: 8px;
+}
+
 .icon-hover {
     background-color: #fff;
-    padding: 10px;
+    padding: 8px;
     border-radius: 100%;
     font-size: 18px;
     color: #000;
-    margin-left: 8px;
     position: absolute;
-    right: 45px;
-    top: 19px;
+    right: 27px;
+    top: 17px;
     visibility: hidden;
+    border: 1px solid #ccc;
+    z-index: 999;
 }
 
 .dot {
@@ -171,7 +179,7 @@ body {
     border: 2px solid #fff;
     position: absolute;
     bottom: 10px;
-    left: 61px;
+    left: 55px;
 }
 
 .mes-body {
@@ -452,4 +460,19 @@ body {
 .menu-right .sub-menu3:hover {
     background-color: #dedfe0;
     border-radius: 7px;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Moblie */
+@media (max-width: 739px) {
+
 }

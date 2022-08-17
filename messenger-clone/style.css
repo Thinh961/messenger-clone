@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0;
 }
 
 li {
@@ -11,6 +17,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .mes-form {
@@ -229,9 +236,9 @@ body {
     background-color: #31A24C;
     border-radius: 50%;
     border: 2px solid #fff;
-    position: absolute;
-    top: 43px;
-    left: 434px;
+    position: relative;
+    top: 25px;
+    left: -12px;
 }
 
 .live-chat {
@@ -381,4 +388,68 @@ body {
     font-family: inherit;
     color: #65676B;
     padding-top: 5px;
+}
+
+.custom-right .menu-right {
+    padding: 0 20px;
+}
+
+.menu-right .menu-title{
+    font-size: 17px;
+    font-family: inherit;
+    color: #050505;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-right .menu-title:hover {
+    background-color: #dedfe0;
+    border-radius: 7px;
+}
+
+.menu-right .sub-menu1 {
+    font-size: 17px;
+    font-family: inherit;
+    color: #050505;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-right .sub-menu2 {
+    font-size: 17px;
+    font-family: inherit;
+    color: #050505;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-right .sub-menu3{
+    font-size: 17px;
+    font-family: inherit;
+    color: #050505;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-right .sub-menu1:hover {
+    background-color: #dedfe0;
+    border-radius: 7px;
+}
+
+.menu-right .sub-menu2:hover {
+    background-color: #dedfe0;
+    border-radius: 7px;
+}
+
+.menu-right .sub-menu3:hover {
+    background-color: #dedfe0;
+    border-radius: 7px;
 }

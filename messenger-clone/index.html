@@ -110,7 +110,7 @@
                 <div class="user-action">
                     <i class="fas fa-phone-alt user-icon"></i>
                     <i class="fas fa-video user-icon"></i>
-                    <i class="fas fa-info-circle user-icon"></i>
+                    <i class="fas fa-info-circle user-icon" id="thinh"></i>
                 </div>
             </div>
             <div class="live-chat">
@@ -169,17 +169,17 @@
                     </div>
                 </div>
                 <div class="text-bar">
-                    <div style="width: 15%">
+                    <div class="bar-icon">
                         <i class="fas fa-plus-circle icon-bar"></i>
                         <i class="fas fa-images fa-rotate-90 icon-bar"></i>
                         <i class="fas fa-smile icon-bar"></i>
                     </div>
-                    <div style="width: 80%">
+                    <div class="bar-input">
                         <form class="text-bar__field">
                             <input type="text" placeholder="Aa..." />
                         </form>
                     </div>
-                    <div style="width: 5%">
+                    <div class="bar-like">
                         <i class="fas fa-thumbs-up icon-bar"></i>
                     </div>
                 </div>
@@ -249,6 +249,10 @@
         </div>
     </div>
     <script>
+        // $("#thinh").click(function () {
+        //     $(".mes-right").toggle();
+        //     $(".mes-body").css("width", "75%");
+        // });
         $("#menu-action1").click(function () {
             $(".sub-menu1").toggle();
         });

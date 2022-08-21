@@ -110,7 +110,7 @@
                 <div class="user-action">
                     <i class="fas fa-phone-alt user-icon"></i>
                     <i class="fas fa-video user-icon"></i>
-                    <i class="fas fa-info-circle user-icon" id="thinh"></i>
+                    <i class="fas fa-info-circle user-icon" id="show-info-right"></i>
                 </div>
             </div>
             <div class="live-chat">
@@ -168,16 +168,14 @@
                         <div class="message">Enjoy!</div>
                     </div>
                 </div>
-                <div class="text-bar">
+                <div class="form-input">
                     <div class="bar-icon">
                         <i class="fas fa-plus-circle icon-bar"></i>
                         <i class="fas fa-images fa-rotate-90 icon-bar"></i>
                         <i class="fas fa-smile icon-bar"></i>
                     </div>
                     <div class="bar-input">
-                        <form class="text-bar__field">
-                            <input type="text" placeholder="Aa..." />
-                        </form>
+                        <input type="text" placeholder="Aa..." />
                     </div>
                     <div class="bar-like">
                         <i class="fas fa-thumbs-up icon-bar"></i>
@@ -217,9 +215,10 @@
                             <i class="fas fa-angle-right fa-rotate-90"></i>
                         </div>
                         <ul>
-                            <li class="sub-menu1">Sub 1</li>
-                            <li class="sub-menu1">Sub 2</li>
-                            <li class="sub-menu1">Sub 3</li>
+                            <li class="sub-menu1"><i class="fas fa-dot-circle icon-right blue"></i>Đổi chủ đề</li>
+                            <li class="sub-menu1"><i class="fas fa-thumbs-up icon-right blue"></i>Thay đổi biểu tượng cảm xúc</li>
+                            <li class="sub-menu1"><span class="icon-right">Aa</span>Chỉnh sửa biệt danh</li>
+                            <li class="sub-menu1"><i class="fa fa-search icon-right"></i>Tìm kiếm trong cuộc trò chuyện</li>
                         </ul>
                     </li>
                     <li>
@@ -228,9 +227,9 @@
                             <i class="fas fa-angle-right fa-rotate-90"></i>
                         </div>
                         <ul>
-                            <li class="sub-menu2">Sub 1</li>
-                            <li class="sub-menu2">Sub 2</li>
-                            <li class="sub-menu2">Sub 3</li>
+                            <li class="sub-menu2"><i class="fas fa-images fa-rotate-90 icon-right"></i>File phương tiện</li>
+                            <li class="sub-menu2"><i class="fas fa-clipboard icon-right"></i> File</li>
+                            <li class="sub-menu2"><i class="fas fa-link icon-right"></i>Liên kết</li>
                         </ul>
                     </li>
                     <li>
@@ -239,9 +238,10 @@
                             <i class="fas fa-angle-right fa-rotate-90"></i>
                         </div>
                         <ul>
-                            <li class="sub-menu3">Sub 1</li>
-                            <li class="sub-menu3">Sub 2</li>
-                            <li class="sub-menu3">Sub 3</li>
+                            <li class="sub-menu3"><i class="far fa-bell icon-right"></i> Tắt thông báo</li>
+                            <li class="sub-menu3"><i class="far fa-comment icon-right"></i> Bỏ qua tin nhắn</li>
+                            <li class="sub-menu3"><i class="fas fa-user-alt-slash icon-right"></i>Chặn</li>
+                            <li class="sub-menu3"><i class="fas fa-exclamation-triangle icon-right"></i> Báo cáo</li>
                         </ul>
                     </li>
                 </ul>
@@ -249,10 +249,10 @@
         </div>
     </div>
     <script>
-        // $("#thinh").click(function () {
-        //     $(".mes-right").toggle();
-        //     $(".mes-body").css("width", "75%");
-        // });
+        $("#show-info-right").click(function () {
+            $(".mes-right").toggle();
+            $(".mes-body").toggleClass("mes-right-full")
+        });
         $("#menu-action1").click(function () {
             $(".sub-menu1").toggle();
         });

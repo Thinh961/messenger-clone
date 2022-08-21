@@ -23,12 +23,15 @@ body {
 .mes-form {
     display: flex;
     width: 100%;
-    /* height: 100%; */
 }
 
 .mes-left {
     width: 25%;
     border-right: 1px solid#ccc;
+}
+
+.mes-right-full {
+    width: 75% !important;
 }
 
 .mes-left .mes-left-action {
@@ -224,6 +227,7 @@ body {
     color: #1877F2;
     font-size: 20px;
     padding: 7px;
+    cursor: pointer;
 }
 
 .user-action .user-icon:hover {
@@ -318,23 +322,42 @@ body {
     justify-content: center;
 }
 
-.text-bar {
+.form-input {
     display: flex;
     width: 100%;
     align-items: center;
     line-height: 70px;
+    padding: 0 10px;
 }
 
-.text-bar .bar-icon {
-    /* width: 15% */
+.form-input .bar-icon {
+    width: 11%;
 }
 
-.text-bar .bar-input {
-    /* width: 80% */
+.form-input .bar-icon i {
+    cursor: pointer;
 }
 
-.text-bar .bar-like {
-    /* width: 5% */
+.form-input .bar-input {
+    width: 84%;
+}
+
+.form-input .bar-input input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #9e9e9eba;
+    font-size: 14px;
+}
+
+.form-input .bar-like {
+    width: 5%;
+    text-align: right;
+}
+
+.form-input .bar-like i {
+    cursor: pointer;
 }
 
 .icon-bar {
@@ -342,18 +365,6 @@ body {
     font-size: 20px;
     justify-content: center;
     padding: 10px 3px;
-}
-
-.text-bar__field input {
-    border-radius: 50px;
-    padding: 10px;
-    background-color: rgb(233, 231, 231);
-    border: none;
-    width: 100%;
-}
-
-.text-bar__field input:focus-visible {
-    border: none;
 }
 
 .mes-right {
@@ -431,32 +442,26 @@ body {
 }
 
 .menu-right .sub-menu1 {
-    font-size: 16px;
+    font-size: 15px;
     font-family: inherit;
     color: #050505;
     font-weight: 600;
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
 }
 
 .menu-right .sub-menu2 {
-    font-size: 16px;
+    font-size: 15px;
     font-family: inherit;
     color: #050505;
     font-weight: 600;
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
 }
 
 .menu-right .sub-menu3{
-    font-size: 16px;
+    font-size: 15px;
     font-family: inherit;
     color: #050505;
     font-weight: 600;
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
 }
 
@@ -475,7 +480,30 @@ body {
     border-radius: 7px;
 }
 
-/* Mobile & Tablet */
+.icon-right {
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.blue {
+    color: #1998e6;
+}
+
+@media (min-width: 1280px) {
+    .form-input .bar-icon {
+        width: 15%;
+    }
+    
+    .form-input .bar-icon i {
+        cursor: pointer;
+    }
+    
+    .form-input .bar-input {
+        width: 80%;
+    }
+}
+
 @media (max-width: 1280px) {
     .mes-right {
         width: 0%;
@@ -489,12 +517,19 @@ body {
     .mes-left {
         width: 40%;
     }
+
+    .form-input .bar-icon {
+        width: 20%;
+    }
+    
+    .form-input .bar-icon i {
+        cursor: pointer;
+    }
+    
+    .form-input .bar-input {
+        width: 75%;
+    }
 }
-
-/* Tablet */
-/* @media (min-width: 740px) and (max-width: 1023px) {
-
-} */
 
 /* Moblie */
 @media (max-width: 884px) {
@@ -504,7 +539,8 @@ body {
     }
 
     .mes-left .mes-left-action {
-        display: grid;
+        /* display: grid; */
+        display: none;
     }
 
     .mes-left-action .action .icon{
@@ -532,7 +568,11 @@ body {
         background-color: #dedfe0;
     }
 
-    .text-bar {
+}
 
+@media screen and (max-width: 480px) {
+    .mes-body-header .user-action {
+        position: absolute;
+        right: 10px;
     }
 }

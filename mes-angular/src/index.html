@@ -1,14 +1,34 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MesAngular</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <title>Messenger</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $("#show-info-right").click(function () {
+        $(".mes-right").toggle();
+        $(".mes-body").toggleClass("mes-right-full")
+    });
+    $("#menu-action1").click(function () {
+        $(".sub-menu1").toggle();
+    });
+    $("#menu-action2").click(function () {
+        $(".sub-menu2").toggle();
+    });
+    $("#menu-action3").click(function () {
+        $(".sub-menu3").toggle();
+    });
+</script>
+<script src="https://kit.fontawesome.com/a33530bb41.js" crossorigin="anonymous"></script>
+
 </html>
